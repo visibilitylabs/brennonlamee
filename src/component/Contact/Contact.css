@@ -1,0 +1,207 @@
+.get-touch-container {
+  padding: 1rem;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+
+  letter-spacing: -0.0625rem;
+  height: 8rem;
+}
+
+.contact-form-container {
+  background-color: #020324;
+  min-height: min(80rem, 80vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 3rem 0; */
+  padding: 5rem 0;
+}
+
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: min(80%, 100rem);
+  /* border: 1px solid #000; */
+}
+
+.contact-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+  gap: 2rem;
+  max-width: 50%;
+  /* border: 1px solid #000; */
+}
+
+.contact-left-container h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.48rem; /* 117.841% */
+  letter-spacing: -0.0625rem;
+}
+
+.contact-left-container p {
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.755rem; /* 156% */
+}
+
+.bookcallbutton {
+  width: 14rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+  border-radius: 0.625rem;
+  background: #3c39d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.contact-right-container {
+  border-radius: 1.25rem;
+  background: linear-gradient(137deg, #edfbfb 0%, #c4c5e5 100%);
+  /* min-width: 25rem; */
+  width: 28rem;
+  padding: 2rem;
+}
+
+.contact-tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.text-input label {
+  color: #020324;
+  font-size: 1;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem; /* 155.556% */
+}
+
+.text-input input {
+  border-radius: 0.625rem;
+  border: 1px solid rgba(36, 2, 19, 0.14);
+  background: #fff;
+  width: 100%;
+  height: 3rem;
+  flex-shrink: 0;
+  padding: 0 1rem;
+  outline: none;
+}
+
+.text-input button {
+  border-radius: 0.625rem;
+  background: #3c39d5;
+  display: flex;
+  height: 3rem;
+  padding: 1.40625rem 8.36981rem 1.40625rem 8.39188rem;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: white;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.01rem;
+  cursor: pointer;
+}
+
+.faq {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.faq-inner-container {
+  min-width: min(80%, 100rem);
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.left-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.right-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+.faq-tile {
+  padding: 1rem;
+  font-size: 0.7rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.faq-tile > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  min-height: 2.5rem;
+  font-size: 0.7rem;
+  z-index: 1;
+  background-color: #fff;
+}
+.faq-tile .para {
+  /* display: none; */
+  margin: 0;
+  visibility: hidden;
+  height: 0;
+  font-size: 0.8rem;
+  margin: 0.25rem 0;
+  color: rgb(118, 118, 118);
+  font-weight: 600;
+  line-height: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  top: -100%;
+  position: relative;
+}
+
+.show_description:hover > .para {
+  /* display: block; */
+  height: 2rem !important;
+  visibility: visible !important;
+  top: 0 !important;
+}
