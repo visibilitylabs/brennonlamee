@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import './Header.css';
 
 const Header = () => {
@@ -21,9 +22,15 @@ const Header = () => {
             </svg>
           </div>
           <div className="menu-container">
-            <span>Testimonials</span>
-            <span>About</span>
-            <span>Contact</span>
+            <Link href={'/'}>
+              <span>Testimonials</span>
+            </Link>
+            <Link href={'/about'}>
+              <span>About</span>
+            </Link>
+            <Link href={'/contact'}>
+              <span>Contact</span>
+            </Link>
           </div>
         </div>
         <div className="right-header">
