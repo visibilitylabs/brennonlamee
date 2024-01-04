@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Image from 'next/image';
 import ContactForm from '../Contact/ContactForm';
+import StickyScrollData from './StickyScrollData';
 
 const Home = () => {
   return (
@@ -38,20 +39,11 @@ const Home = () => {
             </div>
           </div>
           <div className="inner-right-container">
-            <Image src="/about1.svg" width={150} height={200} />
-            <svg
-              width="222"
-              height="367"
-              viewBox="0 0 222 367"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.00104 365C3.00104 365.828 2.33004 366.5 1.50104 366.5C0.673038 366.5 0.0010376 365.828 0.0010376 365H3.00104ZM41.501 -1.5H271.59V1.5H41.501V-1.5ZM0.0010376 365V40H3.00104V365H0.0010376ZM41.501 1.5C20.238 1.5 3.00104 18.737 3.00104 40H0.0010376C0.0010376 17.0802 18.582 -1.5 41.501 -1.5V1.5Z"
-                fill="#000AFF"
-                fill-opacity="0.66"
-              />
-            </svg>
+            <Image src="static/images/about1.svg" width={150} height={200} />
+            <svg width="233" height="368" viewBox="0 0 233 368" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 366.5C3 367.328 2.329 368 1.5 368C0.672 368 0 367.328 0 366.5H3ZM41.5 0H271.589V3H41.5V0ZM0 366.5V41.5H3V366.5H0ZM41.5 3C20.237 3 3 20.237 3 41.5H0C0 18.5802 18.581 0 41.5 0V3Z" fill="#000AFF" fill-opacity="0.66"/>
+</svg>
+
 
             <div className="right-box-container">
               <span className="heading">Conversion Rate</span>
@@ -138,89 +130,48 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="data-container">
-          <div className="inner-data-content">
-            <div className="left-data-container">
-              <div className="data-heading">Data Driven Decisions</div>
-              <div className="data-description">
-                <Image src="chart.svg" width={20} height={20} />
-                <h1>Data Dive & Analysis</h1>
-                <p>
-                  Data analysis is crucial for CRO. We examine our client’s
-                  website or platform data to understand its performance and
-                  identify areas of improvement
-                </p>
-                <hr />
-              </div>
-            </div>
-            <div className="right-data-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="756"
-                height="563"
-                viewBox="0 0 756 563"
-                fill="none"
-              >
-                {/* <path d="M756.154 0H-0.163803V562.39H756.154V0Z" fill="black" /> */}
-              </svg>
+        <StickyScrollData/>
+        <div className="testimonial-section">
+          <div className="testimonial-heading">
+            Unlock Your Website's 
+            <div className="testimonial-heading-colored">
+              Full Potential
             </div>
           </div>
-          <div className="inner-data-content">
-            <div className="left-data-container">
-              <div className="data-heading">Tailored Content Excellence</div>
-              <div className="data-description">
-                <Image src="lock.svg" width={20} height={20} />
-                <h1>Unique Strategies</h1>
-                <p>
-                  Content Strategy & Personalization involves creating relevant
-                  and engaging content to cater to the specific needs and
-                  preferences of your target audience.
-                </p>
-                <hr />
-              </div>
+          <div className="testimonial-section-item">
+            <div className="testimonial-section-item-heading">
+            "Transformative Collaboration with Legacy Solutions"
             </div>
-            <div className="right-data-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="756"
-                height="563"
-                viewBox="0 0 756 563"
-                fill="none"
-              >
-                {/* <path d="M756.154 0H-0.163803V562.39H756.154V0Z" fill="black" /> */}
-              </svg>
-            </div>
-          </div>{' '}
-          <div className="inner-data-content">
-            <div className="left-data-container">
-              <div className="data-heading">Data Driven Decisions</div>
-              <div className="data-description">
-                <Image src="chart.svg" width={20} height={20} />
-                <h1>Data Dive & Analysis</h1>
-                <p>
-                  Data analysis is crucial for CRO. We examine our client’s
-                  website or platform data to understand its performance and
-                  identify areas of improvement
-                </p>
-                <hr />
-              </div>
-            </div>
-            <div className="right-data-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="756"
-                height="563"
-                viewBox="0 0 756 563"
-                fill="none"
-              >
-                {/* <path d="M756.154 0H-0.163803V562.39H756.154V0Z" fill="black" /> */}
-              </svg>
-            </div>
-          </div>{' '}
+            <div className="testimonial-section-item-description">
+
+"Working with Legacy Solutions has been a game-changer for Mountain Jewelry. Their meticulous approach and strategic guidance propelled our online presence to new heights. The collaboration resulted in a remarkable 12% surge in conversion rates, reflecting the effectiveness of their data-driven methodologies. The significant decrease in bounce rates by 9% showcased improved engagement. Additionally, the streamlined checkout process led to an impressive 18% drop in cart abandonment rates. Legacy Solutions' expertise truly transformed our user experience and digital performance."
+</div>
+          </div>
+          <div className="hear-our-customers-button">
+          <div className="flag-container">
+            Hear Our Customers{' '}
+            <svg
+              width="6"
+              height="19"
+              viewBox="0 0 6 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 5L5 9.5L1 14"
+                stroke="#240213"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          </div>
         </div>
       </div>
 
       <ContactForm heading={'Still in doubt?'} />
+
     </div>
   );
 };

@@ -51,13 +51,13 @@ const ContactForm = ({ heading }) => {
           </div>
           <div className="contact-tile">
             <div className="text-input">
-              <label htmlFor="phone">Phone*</label>
+              <label htmlFor="phone">Phone Number</label>
               <input type="text" id="phone" />
             </div>
           </div>
           <div className="contact-tile">
             <div className="text-input">
-              <label htmlFor="message">Website*</label>
+              <label htmlFor="message">Website</label>
               <input type="text" id="message" />
             </div>
           </div>

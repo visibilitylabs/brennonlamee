@@ -1,16 +1,16 @@
+import './Footer.css';
+
 const Footer = () => {
-  return 
-  (
-    <div className="footer">
+  return (<div className="footer">
     <div className="div-footer-wrapper">
       <div className="div-footer-top">
         <div className="div-footer-logo">
-          <p className="text-wrapper-32">Unlock your Website’s full Potential with CRO PROS</p>
           <div className="link-9">
             <div className="overlap-group-9">
-              <div className="text-wrapper-33">Legacy Solutions LOGO</div>
+              <img src="/static/images/logo.png" height={250} />
             </div>
           </div>
+          <p className="text-wrapper-32">Unlock your Website’s full Potential with CRO PROS</p>
         </div>
       </div>
       <div className="div-footer-divider" />
@@ -31,14 +31,26 @@ const Footer = () => {
             <div className="link-instagram">Instagram</div>
           </div>
         </div>
-        <div className="link-10">
-          <div className="overlap-group-8">
-            <p className="text-wrapper-30">Book a Call with Us</p>
-            <img className="SVG-3" alt="Svg" src="/static/images/home/svg-10.svg" />
-          </div>
-        </div>
+        <div className="bookcallbutton">
+              Book a Call with Us{' '}
+              <svg
+                width="10"
+                height="20"
+                viewBox="0 0 10 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.66663 5.84033L8.33329 10.3403L1.66663 14.8403"
+                  stroke="#F1F1F1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
       </div>
-      <div className="div-footer-bottom">
+      {/* <div className="div-footer-bottom">
         <div className="div-footer-socials">
           <div className="div-footer-socials-2">
             <div className="SVG-wrapper">
@@ -63,7 +75,7 @@ const Footer = () => {
           </div>
           <div className="div-footer-divider-2" />
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
   )

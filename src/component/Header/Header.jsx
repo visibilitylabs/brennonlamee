@@ -1,7 +1,31 @@
+'use client';
 import Link from 'next/link';
+import Image from 'next/image';
 import './Header.css';
-
+import React from 'react';
 const Header = () => {
+
+  // check if the scroll height is greater than 200
+  const [isPastScroll, setIsPastScroll] = React.useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const isPastScroll = window.scrollY > 200;
+      setIsPastScroll(isPastScroll);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  React.useEffect(() => {
+    console.log('isPastScroll', isPastScroll);
+  }
+  , [isPastScroll]);
+
   return (
     <div className="header-container">
       <div className="content-container">
@@ -11,18 +35,12 @@ const Header = () => {
               src="https://www.docplanner.com/img/logo-default-group-en.svg?v=1"
               alt="Docplanner Group"
             /> */}
-            <svg
-              width="162"
-              height="58"
-              viewBox="0 0 162 58"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="162" height="58" fill="#3C39D5" />
-            </svg>
+            <Link href={'/'}>
+              <img src="/static/images/logo-small.png" height={50} />
+            </Link>
           </div>
           <div className="menu-container">
-            <Link href={'/'}>
+            <Link href={'/testimonials'}>
               <span>Testimonials</span>
             </Link>
             <Link href={'/about'}>
@@ -52,6 +70,25 @@ const Header = () => {
               />
             </svg>
           </div>
+          <div className="flag-container flag-container-mobile">
+            Book a Call {' '}
+            <svg
+              width="6"
+              height="19"
+              viewBox="0 0 6 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 5L5 9.5L1 14"
+                stroke="#240213"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          
         </div>
       </div>
     </div>
