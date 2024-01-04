@@ -15,7 +15,7 @@ const About = () => {
         </div>
       </div> */}
       <div className="about-grid">
-          <Image src="about1.svg" alt="about" width={400} height={400} />
+          <Image src="/about1.svg" alt="about" width={400} height={400} />
           <div className="about-grid-text-container">
           <b>Elevating Your Conversion Rates</b>
 At Legacy Solutions, our expertise lies in empowering businesses generating under 1 million in annual revenue to enhance their online success through boosted traffic conversion rates. We offer a tailored approach, leveraging expert analysis, strategic editing, and precise implementation to achieve tangible and remarkable results.
@@ -44,7 +44,7 @@ At Legacy Solutions, we guarantee your satisfaction and results. Expect an avera
 Our primary goal is to establish a thriving partnership by showcasing the transformative capabilities of our services. We eagerly anticipate insightful discussions tailored to align our offerings with your unique vision and aspirations. Let's pave the way for your business's digital triumph together.
           </div>
         </div>
-      <Image src="about2.svg" alt="about" width={400} height={400} />
+      <Image src="/about2.svg" alt="about" width={400} height={400} />
       </div>
       <div className="meet-team-container">
         <div className="meet-team-heading">

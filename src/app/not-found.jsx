@@ -1,5 +1,7 @@
+import Home from "@/component/Home/Home";
+
 const notFound = () => {
-  return <div>not-found</div>;
+  return <Home/>;
 };
 
 export default notFound;

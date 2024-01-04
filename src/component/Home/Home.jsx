@@ -139,6 +139,8 @@ const Home = () => {
               Full Potential
             </div>
           </div>
+          <div className="testimonial-item-container">
+
           <div className="testimonial-section-item">
             <div className="testimonial-section-item-heading">
             Transformative Collaboration with Legacy Solutions
@@ -148,6 +150,8 @@ const Home = () => {
 Working with Legacy Solutions has been a game-changer for Mountain Jewelry. Their meticulous approach and strategic guidance propelled our online presence to new heights. The collaboration resulted in a remarkable 12% surge in conversion rates, reflecting the effectiveness of their data-driven methodologies. The significant decrease in bounce rates by 9% showcased improved engagement. Additionally, the streamlined checkout process led to an impressive 18% drop in cart abandonment rates. Legacy Solutions&lsquo; expertise truly transformed our user experience and digital performance.
 </div>
           </div>
+          </div>
+
           <div className="hear-our-customers-button">
           <Link href={'/testimonials'} className="flag-container">
             Hear Our Customers{' '}

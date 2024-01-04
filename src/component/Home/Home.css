@@ -480,6 +480,12 @@
     color: #000;
 }
 
+.testimonial-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .testimonial-section-item .testimonial-section-item-description {
     font-family: Inter;
     font-size: 1.125rem;

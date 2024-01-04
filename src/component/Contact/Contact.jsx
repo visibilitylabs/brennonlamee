@@ -2,10 +2,13 @@
 
 import './Contact.css';
 import ContactForm from './ContactForm';
+import { useState } from 'react';
 
 const Contact = () => {
-  const toggle = e => {
-    e.target.classList.toggle('show_description');
+  const [current, setCurrent] = useState(0);
+  const toggle = val => {
+    setCurrent(val);
+
   };
 
   return (
@@ -26,9 +29,8 @@ const Contact = () => {
           </div>
           <div className="right-faq">
             <div
-              className="faq-tile"
-              onMouseEnter={toggle}
-              onMouseLeave={toggle}
+              className={current==0?"faq-tile show_description":"faq-tile"}
+              onMouseEnter={()=>toggle(0)}
             >
               <div>
                 <h1>What sets your CRO strategies apart from others in the industry? </h1>{' '}
@@ -45,9 +47,9 @@ const Contact = () => {
               At our CRO agency, we stand out by employing a comprehensive and data-driven approach. We conduct thorough user experience audits and in-depth conversion funnel analyses, leveraging insights to tailor personalized strategies. Our focus on continuous A/B testing, coupled with a strong emphasis on user-centric design and content optimization, ensures the efficacy and relevance of our strategies in enhancing conversion rates. </p>
             </div>
             <div
-              className="faq-tile"
-              onMouseEnter={toggle}
-              onMouseLeave={toggle}
+              className={current==1?"faq-tile show_description":"faq-tile"}
+              onMouseEnter={()=>toggle(1)}
+              onMouseLeave={()=>toggle(0)}
             >
               <div>
                 <h1>How do you ensure the success and effectiveness of your CRO methodologies? </h1>{' '}
@@ -64,9 +66,9 @@ const Contact = () => {
               Our success is deeply rooted in meticulous planning, implementation, and measurement. We prioritize a robust foundation of data analysis and user behavior assessment, enabling us to identify pain points and opportunities. A continuous cycle of testing and optimization, coupled with agile and adaptive methodologies, ensures that our strategies evolve to meet the dynamic demands of the digital landscape. Our track record of consistent positive results across various industries reaffirms the reliability and effectiveness of our approach. </p>
             </div>
             <div
-              className="faq-tile"
-              onMouseEnter={toggle}
-              onMouseLeave={toggle}
+              className={current==2?"faq-tile show_description":"faq-tile"}
+              onMouseEnter={()=>toggle(2)}
+              onMouseLeave={()=>toggle(0)}
             >
               <div>
                 <h1>How do you tailor your strategies to meet the unique needs of different businesses? </h1>{' '}
@@ -83,9 +85,9 @@ const Contact = () => {
               Understanding that every business is unique, our approach is highly adaptive. We begin by conducting a thorough assessment of each client's specific challenges, goals, and target audience. Leveraging this insight, we craft personalized strategies, focusing on user segmentation, tailored content, and individualized user experiences. Our strategies are nimble and flexible, designed to be scalable and adaptable to meet the evolving needs of each business we collaborate with.</p>
             </div>
             <div
-              className="faq-tile"
-              onMouseEnter={toggle}
-              onMouseLeave={toggle}
+              className={current==3?"faq-tile show_description":"faq-tile"}
+              onMouseEnter={()=>toggle(3)}
+              onMouseLeave={()=>toggle(0)}
             >
               <div>
                 <h1>What measurable outcomes can clients expect from implementing your CRO strategies?</h1>{' '}

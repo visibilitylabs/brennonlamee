@@ -20,9 +20,9 @@ const Footer = () => {
         <div className="div-footer-links">
           <div className="div-w-node">
             <div className="resources">RESOURCES</div>
-            <div className="link-blog">About</div>
-            <div className="link-case-studies">Testimonials</div>
-            <div className="link-help-centre">Contact</div>
+            <Link href={'/about'} className="link-blog">About</Link>
+            <Link href={'/testimonials'} className="link-case-studies">Testimonials</Link>
+            <Link href={'/contact'}  className="link-help-centre">Contact</Link>
           </div>
           <div className="div-w-node-b">
             <div className="get-in-touch">GET IN TOUCH</div>

@@ -113,4 +113,31 @@
     .content-container {
         flex-wrap: wrap;
     }
+    .right-header {
+        position: absolute;
+        right: 11px;
+        top: 20px;
+    }
+    .left-header {
+        /* flex-direction: column; */
+        /* align-items: flex-start; */
+        width: 100%;
+        margin-left: -50px;
+    }
+    .menu-container {
+        width: 100%;
+        justify-content: center;
+    }
+    .content-container {
+        height: auto;
+    }
+}
+
+@media (max-width:500px) {
+    .left-header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-left: 0;
+    }
 }
