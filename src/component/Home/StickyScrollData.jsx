@@ -1,6 +1,8 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+
 
 const StickyScrollData = () => {
 
@@ -125,7 +127,7 @@ return (<div className="data-container-sticky" ref={containerRef} >
       {/* <div className="progress-bar">
         <div className="progress-bar-inner" style={{width:`${sectionProgress}%`}} ></div>
       </div> */}
-      <div className="bookcallbutton">
+     <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'}  className="bookcallbutton">
               Book a Call with Us{' '}
               <svg
                 width="10"
@@ -142,13 +144,13 @@ return (<div className="data-container-sticky" ref={containerRef} >
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </Link>
     </div>
   </div>
   <div className="right-data-container">
     <div className="right-data-inner right-data-image-container">
-   {/* <Image src={'/static/images/home/image-4.png'} height={400} width={500}  /> */}
-    <img src={'/static/images/home/image-4.png'}/>
+   {/* <Image src={'/image-4.png'} height={400} width={500}  /> */}
+    <img src={'/image-4.png'}/>
    </div>
   </div>
 </div>{' '}

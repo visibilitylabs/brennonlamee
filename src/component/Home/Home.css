@@ -308,7 +308,7 @@
     height: 100%;
     object-fit: contain;
     z-index: 0;
-    background-image: url('/static/images/home/background-glyphs.svg');
+    background-image: url('/background-glyphs.svg');
 }
 
 .right-data-container>svg {

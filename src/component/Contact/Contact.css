@@ -22,7 +22,7 @@
 .contact-form-container::before {
     content: '';
     position: absolute;
-    background-image: url('/static/images/home/contact-glyph.svg');
+    background-image: url('/contact-glyph.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -155,7 +155,7 @@
 }
 
 .faq-inner-container {
-    min-width: min(80%, 100rem);
+    width: min(80%, 80rem);
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -178,8 +178,6 @@
 .faq-tile {
     padding: 1rem;
     font-size: 0.7rem;
-    border: 1px solid grey;
-    border-radius: 10px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -187,6 +185,7 @@
     overflow: hidden;
     z-index: 1;
     background-color: #fff;
+    border-bottom: 1px solid #c1c1c1;
 }
 
 .faq-tile>div {
@@ -201,25 +200,22 @@
 }
 
 .faq-tile .para {
-    /* display: none; */
     margin: 0;
     visibility: hidden;
-    height: 0;
     font-size: 0.8rem;
     margin: 0.25rem 0;
     color: rgb(118, 118, 118);
     font-weight: 600;
     line-height: 1.5rem;
     transition: all 0.3s ease-in-out;
-    top: -100%;
     position: relative;
+    max-height: 0;
+    overflow: hidden;
 }
 
-.show_description:hover>.para {
-    /* display: block; */
-    height: 2rem !important;
+.show_description>.para {
+    max-height: 1000px;
     visibility: visible !important;
-    top: 0 !important;
 }
 
 @media (max-width:1000px) {

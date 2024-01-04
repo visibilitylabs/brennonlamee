@@ -3,6 +3,7 @@ import './Home.css';
 import Image from 'next/image';
 import ContactForm from '../Contact/ContactForm';
 import StickyScrollData from './StickyScrollData';
+import Link from 'next/link';
 
 const Home = () => {
   return (
@@ -19,7 +20,7 @@ const Home = () => {
               their traffic conversion rates using expert analysis, edit and
               implementation
             </p>
-            <div className="bookcallbutton">
+            <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'} className="bookcallbutton">
               Book a Call with Us{' '}
               <svg
                 width="10"
@@ -36,10 +37,10 @@ const Home = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </Link>
           </div>
           <div className="inner-right-container">
-            <Image src="static/images/about1.svg" width={150} height={200} />
+            <Image src="about1.svg" width={150} height={200} />
             <svg width="233" height="368" viewBox="0 0 233 368" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3 366.5C3 367.328 2.329 368 1.5 368C0.672 368 0 367.328 0 366.5H3ZM41.5 0H271.589V3H41.5V0ZM0 366.5V41.5H3V366.5H0ZM41.5 3C20.237 3 3 20.237 3 41.5H0C0 18.5802 18.581 0 41.5 0V3Z" fill="#000AFF" fill-opacity="0.66"/>
 </svg>
@@ -83,7 +84,7 @@ const Home = () => {
             </span>
           </div>
           <div className="box">
-            <span className="title">$2.2B</span>
+            <span className="title">$2.2M</span>
             <span className="description">
               Revenue Increased
               <svg
@@ -106,7 +107,7 @@ const Home = () => {
             </span>
           </div>
           <div className="box">
-            <span className="title">$50M+</span>
+            <span className="title">$5M+</span>
             <span className="description">
               Savings Delivered
               <svg
@@ -140,15 +141,15 @@ const Home = () => {
           </div>
           <div className="testimonial-section-item">
             <div className="testimonial-section-item-heading">
-            "Transformative Collaboration with Legacy Solutions"
+            Transformative Collaboration with Legacy Solutions
             </div>
             <div className="testimonial-section-item-description">
 
-"Working with Legacy Solutions has been a game-changer for Mountain Jewelry. Their meticulous approach and strategic guidance propelled our online presence to new heights. The collaboration resulted in a remarkable 12% surge in conversion rates, reflecting the effectiveness of their data-driven methodologies. The significant decrease in bounce rates by 9% showcased improved engagement. Additionally, the streamlined checkout process led to an impressive 18% drop in cart abandonment rates. Legacy Solutions' expertise truly transformed our user experience and digital performance."
+Working with Legacy Solutions has been a game-changer for Mountain Jewelry. Their meticulous approach and strategic guidance propelled our online presence to new heights. The collaboration resulted in a remarkable 12% surge in conversion rates, reflecting the effectiveness of their data-driven methodologies. The significant decrease in bounce rates by 9% showcased improved engagement. Additionally, the streamlined checkout process led to an impressive 18% drop in cart abandonment rates. Legacy Solutions&lsquo; expertise truly transformed our user experience and digital performance.
 </div>
           </div>
           <div className="hear-our-customers-button">
-          <div className="flag-container">
+          <Link href={'/testimonials'} className="flag-container">
             Hear Our Customers{' '}
             <svg
               width="6"
@@ -165,7 +166,7 @@ const Home = () => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </Link>
           </div>
         </div>
       </div>

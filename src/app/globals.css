@@ -23,6 +23,7 @@ body {
     gap: 1rem;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .bookcallbutton:hover {

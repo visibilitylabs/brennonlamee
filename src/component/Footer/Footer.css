@@ -53,10 +53,12 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
+    gap: 76px;
 }
 
 .div-footer-links {
     display: flex;
+    gap: 60px;
 }
 
 .div-w-node {

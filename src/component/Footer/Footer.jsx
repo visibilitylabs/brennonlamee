@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import './Footer.css';
+
 
 const Footer = () => {
   return (<div className="footer">
@@ -7,7 +9,7 @@ const Footer = () => {
         <div className="div-footer-logo">
           <div className="link-9">
             <div className="overlap-group-9">
-              <img src="/static/images/logo.png" height={250} />
+              <img src="/logo.png" height={250} />
             </div>
           </div>
           <p className="text-wrapper-32">Unlock your Website’s full Potential with CRO PROS</p>
@@ -31,7 +33,7 @@ const Footer = () => {
             <div className="link-instagram">Instagram</div>
           </div>
         </div>
-        <div className="bookcallbutton">
+        <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'} className="bookcallbutton">
               Book a Call with Us{' '}
               <svg
                 width="10"
@@ -48,28 +50,28 @@ const Footer = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </Link>
       </div>
       {/* <div className="div-footer-bottom">
         <div className="div-footer-socials">
           <div className="div-footer-socials-2">
             <div className="SVG-wrapper">
-              <img className="SVG-4" alt="Svg" src="/static/images/home/svg-5.svg" />
+              <img className="SVG-4" alt="Svg" src="/svg-5.svg" />
             </div>
             <div className="overlap-13">
-              <img className="SVG-5" alt="Svg" src="/static/images/home/svg-6.svg" />
+              <img className="SVG-5" alt="Svg" src="/svg-6.svg" />
               <div className="link-11" />
             </div>
             <div className="overlap-14">
-              <img className="SVG-5" alt="Svg" src="/static/images/home/svg-7.svg" />
+              <img className="SVG-5" alt="Svg" src="/svg-7.svg" />
               <div className="link-11" />
             </div>
             <div className="overlap-15">
-              <img className="SVG-5" alt="Svg" src="/static/images/home/svg-8.svg" />
+              <img className="SVG-5" alt="Svg" src="/svg-8.svg" />
               <div className="link-11" />
             </div>
             <div className="overlap-16">
-              <img className="SVG-5" alt="Svg" src="/static/images/home/svg-9.svg" />
+              <img className="SVG-5" alt="Svg" src="/svg-9.svg" />
               <div className="link-11" />
             </div>
           </div>

@@ -31,7 +31,7 @@ const Contact = () => {
               onMouseLeave={toggle}
             >
               <div>
-                <h1>How do I get started? </h1>{' '}
+                <h1>What sets your CRO strategies apart from others in the industry? </h1>{' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="16"
@@ -42,9 +42,7 @@ const Contact = () => {
                 </svg>
               </div>
               <p className="para">
-                Click the link below to directly connect with us, or send your
-                details to us. We will reach out to you ASAP.
-              </p>
+              At our CRO agency, we stand out by employing a comprehensive and data-driven approach. We conduct thorough user experience audits and in-depth conversion funnel analyses, leveraging insights to tailor personalized strategies. Our focus on continuous A/B testing, coupled with a strong emphasis on user-centric design and content optimization, ensures the efficacy and relevance of our strategies in enhancing conversion rates. </p>
             </div>
             <div
               className="faq-tile"
@@ -52,7 +50,7 @@ const Contact = () => {
               onMouseLeave={toggle}
             >
               <div>
-                <h1>How do I get started? </h1>{' '}
+                <h1>How do you ensure the success and effectiveness of your CRO methodologies? </h1>{' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="16"
@@ -63,9 +61,7 @@ const Contact = () => {
                 </svg>
               </div>
               <p className="para">
-                Click the link below to directly connect with us, or send your
-                details to us. We will reach out to you ASAP.
-              </p>
+              Our success is deeply rooted in meticulous planning, implementation, and measurement. We prioritize a robust foundation of data analysis and user behavior assessment, enabling us to identify pain points and opportunities. A continuous cycle of testing and optimization, coupled with agile and adaptive methodologies, ensures that our strategies evolve to meet the dynamic demands of the digital landscape. Our track record of consistent positive results across various industries reaffirms the reliability and effectiveness of our approach. </p>
             </div>
             <div
               className="faq-tile"
@@ -73,7 +69,7 @@ const Contact = () => {
               onMouseLeave={toggle}
             >
               <div>
-                <h1>How do I get started? </h1>{' '}
+                <h1>How do you tailor your strategies to meet the unique needs of different businesses? </h1>{' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="16"
@@ -84,9 +80,7 @@ const Contact = () => {
                 </svg>
               </div>
               <p className="para">
-                Click the link below to directly connect with us, or send your
-                details to us. We will reach out to you ASAP.
-              </p>
+              Understanding that every business is unique, our approach is highly adaptive. We begin by conducting a thorough assessment of each client's specific challenges, goals, and target audience. Leveraging this insight, we craft personalized strategies, focusing on user segmentation, tailored content, and individualized user experiences. Our strategies are nimble and flexible, designed to be scalable and adaptable to meet the evolving needs of each business we collaborate with.</p>
             </div>
             <div
               className="faq-tile"
@@ -94,7 +88,7 @@ const Contact = () => {
               onMouseLeave={toggle}
             >
               <div>
-                <h1>How do I get started? </h1>{' '}
+                <h1>What measurable outcomes can clients expect from implementing your CRO strategies?</h1>{' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="16"
@@ -105,9 +99,7 @@ const Contact = () => {
                 </svg>
               </div>
               <p className="para">
-                Click the link below to directly connect with us, or send your
-                details to us. We will reach out to you ASAP.
-              </p>
+              Clients can expect tangible and quantifiable improvements in their online performance metrics. These include but are not limited to a significant surge in conversion rates, a decrease in bounce rates, a notable drop in cart abandonment rates, and overall improvements in user engagement metrics. Our commitment to results-driven strategies ensures that our clients experience substantial and sustained growth in their online presence, ultimately translating into enhanced revenue and business success. </p>
             </div>
           </div>
         </div>

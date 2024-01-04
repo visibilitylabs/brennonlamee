@@ -1,5 +1,6 @@
 import React from 'react';
 import './Contact.css';
+import Link from 'next/link';
 
 const ContactForm = ({ heading }) => {
   return (
@@ -11,7 +12,7 @@ const ContactForm = ({ heading }) => {
             Click the link below to directly connect with us, or send your
             details to us. We will reach out to you ASAP.
           </p>
-          <div className="bookcallbutton">
+          <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'} className="bookcallbutton">
             Book a Call with Us{' '}
             <svg
               width="10"
@@ -28,7 +29,7 @@ const ContactForm = ({ heading }) => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </Link>
         </div>
 
         <div className="contact-right-container">

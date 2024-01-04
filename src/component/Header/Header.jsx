@@ -36,7 +36,7 @@ const Header = () => {
               alt="Docplanner Group"
             /> */}
             <Link href={'/'}>
-              <img src="/static/images/logo-small.png" height={50} />
+              <img src="/logo-small.png" height={50} />
             </Link>
           </div>
           <div className="menu-container">
@@ -52,7 +52,7 @@ const Header = () => {
           </div>
         </div>
         <div className="right-header">
-          <div className="flag-container">
+        <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'}  className="flag-container">
             Book a Call with us Today{' '}
             <svg
               width="6"
@@ -69,8 +69,8 @@ const Header = () => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
-          <div className="flag-container flag-container-mobile">
+          </Link>
+          <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'}  className="flag-container flag-container-mobile">
             Book a Call {' '}
             <svg
               width="6"
@@ -87,7 +87,7 @@ const Header = () => {
                 stroke-linejoin="round"
               />
             </svg>
-          </div>
+          </Link>
           
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const About = () => {
   return (
@@ -10,11 +11,11 @@ const About = () => {
       </div>
       {/* <div className="image-container-about">
         <div className="inner-grid-container">
-        <Image src="static/images/about3.svg" alt="about" width={400} height={400} />
+        <Image src="about3.svg" alt="about" width={400} height={400} />
         </div>
       </div> */}
       <div className="about-grid">
-          <Image src="static/images/about1.svg" alt="about" width={400} height={400} />
+          <Image src="about1.svg" alt="about" width={400} height={400} />
           <div className="about-grid-text-container">
           <b>Elevating Your Conversion Rates</b>
 At Legacy Solutions, our expertise lies in empowering businesses generating under 1 million in annual revenue to enhance their online success through boosted traffic conversion rates. We offer a tailored approach, leveraging expert analysis, strategic editing, and precise implementation to achieve tangible and remarkable results.
@@ -43,7 +44,7 @@ At Legacy Solutions, we guarantee your satisfaction and results. Expect an avera
 Our primary goal is to establish a thriving partnership by showcasing the transformative capabilities of our services. We eagerly anticipate insightful discussions tailored to align our offerings with your unique vision and aspirations. Let's pave the way for your business's digital triumph together.
           </div>
         </div>
-      <Image src="static/images/about2.svg" alt="about" width={400} height={400} />
+      <Image src="about2.svg" alt="about" width={400} height={400} />
       </div>
       <div className="meet-team-container">
         <div className="meet-team-heading">
@@ -52,7 +53,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
         <div className="meet-team-grid">
           <div className="meet-team-item">
             <div className="meet-team-image">
-            <Image src="/static/images/Team/Alexander-Sterling.jpg" alt="about" width={200} height={200} />
+            <Image src="/Alexander-Sterling.jpg" alt="about" width={200} height={200} />
             </div>
             <div className="meet-team-description">
               <div className="teammate-title">
@@ -68,7 +69,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
           </div>
           <div className="meet-team-item">
             <div className="meet-team-image">
-            <Image src="/static/images/Team/Jonathan-Reynolds.jpg" alt="about" width={200} height={200} />
+            <Image src="/Jonathan-Reynolds.jpg" alt="about" width={200} height={200} />
             </div>
             <div className="meet-team-description">
               <div className="teammate-title">
@@ -84,7 +85,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
           </div>
           <div className="meet-team-item">
             <div className="meet-team-image">
-            <Image src="/static/images/Team/Benjamin-Lee.jpg" alt="about" width={200} height={200} />
+            <Image src="/Benjamin-Lee.jpg" alt="about" width={200} height={200} />
             </div>
             <div className="meet-team-description">
               <div className="teammate-title">
@@ -100,7 +101,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
           </div>
           <div className="meet-team-item">
             <div className="meet-team-image">
-            <Image src="/static/images/Team/Vihn-Ly.jpg" alt="about" width={200} height={200} />
+            <Image src="/Vihn-Ly.jpg" alt="about" width={200} height={200} />
             </div>
             <div className="meet-team-description">
               <div className="teammate-title">
@@ -115,7 +116,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
           </div>
           <div className="meet-team-item">
             <div className="meet-team-image">
-            <Image src="/static/images/Team/Carlita-Shaw.jpg" alt="about" width={200} height={200} />
+            <Image src="/Carlita-Shaw.jpg" alt="about" width={200} height={200} />
             </div>
             <div className="meet-team-description">
               <div className="teammate-title">
@@ -141,7 +142,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
         Give your website the boost it needs.<br></br>
         Book a call with us using the link below.
         </div>
-        <div className="bookcallbutton">
+        <Link href={'https://calendly.com/carlitashaw75/1-on-1-meeting'} className="bookcallbutton">
               Book a Call with Us Today{' '}
               <svg
                 width="10"
@@ -158,7 +159,7 @@ Our primary goal is to establish a thriving partnership by showcasing the transf
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </Link>
       </div>
       </div>
 

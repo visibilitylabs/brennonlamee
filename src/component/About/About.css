@@ -112,7 +112,7 @@
 
 .about-pillars-container::after {
     content: '';
-    background-image: url('/static/images/home/contact-glyph.svg');
+    background-image: url('//contact-glyph.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
